@@ -1,0 +1,34 @@
+{
+  "name": "git-up",
+  "version": "1.0.0",
+  "description": "A low level git url parsing library.",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "is-ssh": "^1.0.0",
+    "ssh-url": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IonicaBizau/node-git-up.git"
+  },
+  "keywords": [
+    "git",
+    "url",
+    "parser",
+    "parsing"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "KINDLY",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-git-up/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-git-up"
+}
