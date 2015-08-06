@@ -281,6 +281,7 @@ const INPUT = [
           , pathname: "/path/to/repo.git"
           , hash: ""
           , search: ""
+          , token: "token"
           , protocol: "https"
         }
     ]
@@ -308,6 +309,34 @@ const INPUT = [
           , hash: ""
           , search: ""
           , protocol: "https"
+        }
+    ]
+  , [
+        "https://token:x-oauth-basic@github.com/owner/name.git"
+      , {
+            protocols: ["https"]
+          , port: null
+          , resource: "github.com"
+          , user: "token:x-oauth-basic"
+          , pathname: "/owner/name.git"
+          , hash: ""
+          , search: ""
+          , protocol: "https"
+          , token: "token"
+        }
+    ]
+  , [
+        "https://x-token-auth:token@bitbucket.org/owner/name.git"
+      , {
+            protocols: ["https"]
+          , port: null
+          , resource: "bitbucket.org"
+          , user: "x-token-auth:token"
+          , pathname: "/owner/name.git"
+          , hash: ""
+          , search: ""
+          , protocol: "https"
+          , token: "token"
         }
     ]
 
@@ -381,6 +410,7 @@ const INPUT = [
 
 INPUT.forEach(function (c) {
     it("should support " + c[0], function (cb) {
+        c[1].href = c[0];
         Assert.deepEqual(GitUp(c[0]), c[1]);
         cb();
     });
