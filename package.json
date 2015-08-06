@@ -7,11 +7,6 @@
     "example": "example",
     "test": "test"
   },
-  "dependencies": {
-    "is-ssh": "^1.0.0",
-    "ssh-url": "^0.1.5"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha test"
   },
@@ -30,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-git-up/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-git-up"
+  "homepage": "https://github.com/IonicaBizau/node-git-up",
+  "dependencies": {
+    "is-ssh": "^1.0.0",
+    "parse-url": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }
