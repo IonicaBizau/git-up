@@ -15,7 +15,7 @@
 
 # git-up [![Donate now][donate-now]][paypal-donations]
 
-A low level git url parsing library.
+A low level git url parser.
 
 ## Installation
 
@@ -60,6 +60,7 @@ console.log(GitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 ## Documentation
 
 ### `GitUp(input)`
+Parses the input url.
 
 #### Params
 - **String** `input`: The input url.
@@ -73,8 +74,9 @@ console.log(GitUp("https://github.com/IonicaBizau/node-parse-url.git"));
  - `pathname` (String): The url pathname.
  - `hash` (String): The url hash.
  - `search` (String): The url querystring value.
-
+ - `href` (String): The input url.
  - `protocol` (String): The git url protocol.
+ - `token` (String): The oauth token (could appear in the https urls).
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].

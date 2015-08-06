@@ -1,7 +1,7 @@
 {
   "name": "git-up",
   "version": "1.0.0",
-  "description": "A low level git url parsing library.",
+  "description": "A low level git url parser.",
   "main": "lib/index.js",
   "directories": {
     "example": "example",
