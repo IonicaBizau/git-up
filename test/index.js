@@ -1,8 +1,7 @@
 // Dependencies
-var GitUp = require("../lib")
-  , Assert = require("assert")
-  ;
-
+const gitUp = require("../lib")
+    , tester = require("tester")
+    ;
 
 const INPUT = [
     // Secure Shell Transport Protocol (SSH)
@@ -23,6 +22,7 @@ const INPUT = [
         "git+ssh://git@host.xz/path/name.git"
       , {
             protocols: ["git", "ssh"]
+          , protocol: "ssh"
           , port: null
           , resource: "host.xz"
           , user: "git"
@@ -408,10 +408,15 @@ const INPUT = [
     ]
 ];
 
-INPUT.forEach(function (c) {
-    it("should support " + c[0], function (cb) {
-        c[1].href = c[0];
-        Assert.deepEqual(GitUp(c[0]), c[1]);
-        cb();
+tester.describe("git-url-parse", test => {
+    INPUT.forEach(function (c) {
+        test.should("support " + c[0], () => {
+            c[1].href = c[0];
+            c[1].protocol = c[1].protocols[0];
+            c[1].token = c[1].token || "";
+            try {
+            test.expect(gitUp(c[0])).toEqual(c[1]);
+            } catch (e) { debugger }
+        });
     });
 });

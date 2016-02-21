@@ -1,7 +1,7 @@
 // Dependencies
-var GitUp = require("../lib");
+var gitUp = require("../lib");
 
-console.log(GitUp("git@github.com:IonicaBizau/node-parse-url.git"));
+console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
 //   , port: null
@@ -14,7 +14,7 @@ console.log(GitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 //   , protocol: "ssh"
 // }
 
-console.log(GitUp("https://github.com/IonicaBizau/node-parse-url.git"));
+console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
 //   , port: null
