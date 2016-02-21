@@ -59,6 +59,6 @@ Contributions are more than welcome!
 
 Thanks! :sweat_smile:
 
-[1]: https://github.com/IonicaBizau/node-git-up/issues
+[1]: https://github.com/IonicaBizau/git-up/issues
 
 [2]: https://github.com/IonicaBizau/code-style
