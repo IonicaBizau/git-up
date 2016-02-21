@@ -12,9 +12,9 @@ $ npm i --save git-up
 
 ```js
 // Dependencies
-var GitUp = require("git-up");
+var gitUp = require("git-up");
 
-console.log(GitUp("git@github.com:IonicaBizau/node-parse-url.git"));
+console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
 //   , port: null
@@ -27,7 +27,7 @@ console.log(GitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 //   , protocol: "ssh"
 // }
 
-console.log(GitUp("https://github.com/IonicaBizau/node-parse-url.git"));
+console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
 //   , port: null
@@ -43,7 +43,7 @@ console.log(GitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 
 ## Documentation
 
-### `GitUp(input)`
+### `gitUp(input)`
 Parses the input url.
 
 #### Params
@@ -68,7 +68,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 ## Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`git-url-parse`](https://github.com/IonicaBizau/node-git-url-parse)
+ - [`git-url-parse`](https://github.com/IonicaBizau/git-url-parse)
 
 ## License
 
