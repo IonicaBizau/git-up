@@ -1,14 +1,18 @@
+
 # git-up [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/git-up.svg)](https://www.npmjs.com/package/git-up) [![Downloads](https://img.shields.io/npm/dt/git-up.svg)](https://www.npmjs.com/package/git-up) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A low level git url parser.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save git-up
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 // Dependencies
@@ -41,7 +45,8 @@ console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // }
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `gitUp(input)`
 Parses the input url.
@@ -62,15 +67,18 @@ Parses the input url.
  - `protocol` (String): The git url protocol.
  - `token` (String): The oauth token (could appear in the https urls).
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`git-url-parse`](https://github.com/IonicaBizau/git-url-parse)
 
-## License
+ - [`git-url-parse`](https://github.com/IonicaBizau/git-url-parse)—A high level git url parser for common git providers.
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
