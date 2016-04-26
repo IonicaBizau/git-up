@@ -1,6 +1,6 @@
 {
   "name": "git-up",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A low level git url parser.",
   "main": "lib/index.js",
   "directories": {
@@ -32,5 +32,16 @@
   },
   "devDependencies": {
     "mocha": "^2.2.5"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
