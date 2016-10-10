@@ -77,7 +77,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 ## :moneybag: Donations
 
 Another way to support the development of my open-source modules is
-to set up a recurring donation, you can [do that on Patreon][patreon].
+to [set up a recurring donation, via Patreon][patreon]. :rocket:
 
 [PayPal donations][paypal-donations] are appreciated too! Each dollar helps.
 
