@@ -1,6 +1,6 @@
 {
   "name": "git-up",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A low level git url parser.",
   "main": "lib/index.js",
   "directories": {
@@ -20,7 +20,7 @@
     "parser",
     "parsing"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/git-up/issues"
@@ -37,12 +37,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ],
