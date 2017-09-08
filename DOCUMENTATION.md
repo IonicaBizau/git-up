@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Parses the input url.
 
 #### Params
+
 - **String** `input`: The input url.
 
 #### Return
