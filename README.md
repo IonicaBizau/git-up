@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save git-up
+# Using npm
+npm install --save git-up
+
+# Using yarn
+yarn add git-up
 ```
 
 
@@ -57,7 +61,9 @@ There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
+
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
 
 
 ## :memo: Documentation
@@ -111,6 +117,7 @@ Thanks! :heart:
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
+ - [`front-end-styleguide-cli`](https://front-end-style.guide) (by Fynn Becker)—Provides access to the global CLI interface for the Front End Styleguide
  - [`front-end-styleguide-init`](https://front-end-style.guide) (by Fynn Becker)—Templates to create the basic file structure needed for the Front End Styleguide
  - [`git-url-parse`](https://github.com/IonicaBizau/git-url-parse)—A high level git url parser for common git providers.
  - [`ship-release`](https://github.com/IonicaBizau/ship-release#readme)—Publish new versions on GitHub and npm with ease.
