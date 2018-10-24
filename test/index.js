@@ -32,6 +32,20 @@ const INPUT = [
           , protocol: "ssh"
         }
     ]
+    , [
+          "git@host.xz:path/name.git"
+        , {
+              protocols: ["git", "ssh"]
+            , protocol: "ssh"
+            , port: null
+            , resource: "host.xz"
+            , user: "git"
+            , pathname: "/path/name.git"
+            , hash: ""
+            , search: ""
+            , protocol: "ssh"
+          }
+      ]
   , [
         "ssh://user@host.xz/path/to/repo.git/"
       , {
