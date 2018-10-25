@@ -72,6 +72,19 @@ const INPUT = [
         }
     ]
   , [
+        "git@domain.xxx.com:42foo/bar.git"
+      , {
+            protocols: []
+          , port: null
+          , resource: "domain.xxx.com"
+          , user: "git"
+          , pathname: "/42foo/bar.git"
+          , hash: ""
+          , search: ""
+          , protocol: "ssh"
+        }
+    ]
+  , [
         "ssh://user@host.xz/path/to/repo.git/"
       , {
             protocols: ["ssh"]
@@ -359,9 +372,9 @@ const INPUT = [
       , {
             protocols: []
           , port: null
-          , resource: "path"
+          , resource: ""
           , user: ""
-          , pathname: "/to/repo.git"
+          , pathname: "path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
@@ -372,9 +385,9 @@ const INPUT = [
       , {
             protocols: []
           , port: null
-          , resource: "~"
+          , resource: ""
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
@@ -387,7 +400,7 @@ const INPUT = [
           , port: null
           , resource: ""
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "file:///path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
@@ -398,25 +411,39 @@ const INPUT = [
       , {
             protocols: ["file"]
           , port: null
-          , resource: "~"
+          , resource: ""
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "file://~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
         }
     ]
+  , [
+        "git@host.xz:path/name.git"
+      , {
+            protocols: []
+          , protocol: "ssh"
+          , port: null
+          , resource: "host.xz"
+          , user: "git"
+          , pathname: "/path/name.git"
+          , hash: ""
+          , search: ""
+          , protocol: "ssh"
+        }
+    ]
 ];
 
-tester.describe("git-url-parse", test => {
+tester.describe("git-up", test => {
     INPUT.forEach(function (c) {
         test.should("support " + c[0], () => {
-            c[1].href = c[0];
-            c[1].protocol = c[1].protocols[0];
+            c[1].href = c[0].replace(/\/$/, "");
+            c[1].protocol = c[1].protocol || c[1].protocols[0];
             c[1].token = c[1].token || "";
-            try {
-            test.expect(gitUp(c[0])).toEqual(c[1]);
-            } catch (e) { debugger }
+            const res = gitUp(c[0])
+            c[1].query = res.query
+            test.expect(res).toEqual(c[1]);
         });
     });
 });
