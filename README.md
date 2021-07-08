@@ -234,11 +234,13 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `birken-react-native-community-image-editor`
  - `native-kakao-login`
  - `react-native-modal-progress-bar`
+ - `react-native-dsphoto-module`
  - `@hawkingnetwork/react-native-tab-view`
- - `miguelcostero-ng2-toasty`
- - `drowl-base-theme-iconset`
  - `rn-custom-tabview`
+ - `drowl-base-theme-iconset`
  - `@ntt_app/react-native-custom-notification`
+ - `react-native-flyy`
+ - `@takeoffmedia/react-native-blueshift-integration`
 
 
 
