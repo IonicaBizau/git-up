@@ -9,13 +9,14 @@ const INPUT = [
         "ssh://user@host.xz:42/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: 42
-          , resource: "host.xz"
+          , port: "42"
+          , resource: "host.xz:42"
           , user: "user"
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
@@ -23,195 +24,227 @@ const INPUT = [
       , {
             protocols: ["git", "ssh"]
           , protocol: "ssh"
-          , port: null
+          , password: ""
+          , port: ""
           , resource: "host.xz"
           , user: "git"
           , pathname: "/path/name.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
+        }
+    ]
+  , [
+      "https:/\github.com/IonicaBizau/node-parse-url.git"
+      , {
+            protocols: ["https"]
+          , port: ""
+          , resource: "github.com"
+          , user: ""
+          , pathname: "/IonicaBizau/node-parse-url.git"
+          , hash: ""
+          , search: ""
+          , protocol: "https"
+          , password: ""
+          , href: "https://github.com/IonicaBizau/node-parse-url.git"
         }
     ]
   , [
         "ssh://user@host.xz/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: "user"
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
+    // TODO
   , [
-        "ssh://host.xz:port/path/to/repo.git/"
+        "ssh://host.xz:4000/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
-          , resource: "host.xz"
+          , port: "4000"
+          , resource: "host.xz:4000"
           , user: ""
-          , pathname: "/port/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://host.xz/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "git@domain.xxx.com:42foo/bar.git"
       , {
-            protocols: []
-          , port: null
+            protocols: ["ssh"]
+          , port: ""
           , resource: "domain.xxx.com"
           , user: "git"
           , pathname: "/42foo/bar.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://user@host.xz/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: "user"
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://host.xz/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://user@host.xz/~user/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: "user"
-          , pathname: "/~user/path/to/repo.git"
+          , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://host.xz/~user/path/to/repo.git/"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/~user/path/to/repo.git"
+          , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://user@host.xz/~/path/to/repo.git"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: "user"
           , pathname: "/~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "ssh://host.xz/~/path/to/repo.git"
       , {
             protocols: ["ssh"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
           , pathname: "/~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
-        "user@host.xz:/path/to/repo.git/"
+        "git@host.xz:path/to/repo.git/"
       , {
-            protocols: []
-          , port: null
+            protocols: ["ssh"]
+          , port: ""
           , resource: "host.xz"
-          , user: "user"
+          , user: "git"
+          , pathname: "/path/to/repo.git/"
+          , hash: ""
+          , search: ""
+          , protocol: "ssh"
+          , password: ""
+        }
+    ]
+  , [
+        "git@host.xz:~user/path/to/repo.git/"
+      , {
+            protocols: ["ssh"]
+          , port: ""
+          , resource: "host.xz"
+          , user: "git"
+          , pathname: "/~user/path/to/repo.git/"
+          , hash: ""
+          , search: ""
+          , protocol: "ssh"
+          , password: ""
+        }
+    ]
+  , [
+        "git@host.xz:path/to/repo.git"
+      , {
+            protocols: ["ssh"]
+          , port: ""
+          , resource: "host.xz"
+          , user: "git"
           , pathname: "/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
-        }
-    ]
-  , [
-        "user@host.xz:~user/path/to/repo.git/"
-      , {
-            protocols: []
-          , port: null
-          , resource: "host.xz"
-          , user: "user"
-          , pathname: "/~user/path/to/repo.git"
-          , hash: ""
-          , search: ""
-          , protocol: "ssh"
-        }
-    ]
-  , [
-        "user@host.xz:path/to/repo.git"
-      , {
-            protocols: []
-          , port: null
-          , resource: "host.xz"
-          , user: "user"
-          , pathname: "/path/to/repo.git"
-          , hash: ""
-          , search: ""
-          , protocol: "ssh"
+          , password: ""
         }
     ]
   , [
         "rsync://host.xz/path/to/repo.git/"
       , {
             protocols: ["rsync"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
 
@@ -220,26 +253,28 @@ const INPUT = [
         "git://host.xz/path/to/repo.git/"
       , {
             protocols: ["git"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "git"
+          , password: ""
         }
     ]
   , [
         "git://host.xz/~user/path/to/repo.git/"
       , {
             protocols: ["git"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/~user/path/to/repo.git"
+          , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "git"
+          , password: ""
         }
     ]
 
@@ -248,93 +283,100 @@ const INPUT = [
         "http://host.xz/path/to/repo.git/"
       , {
             protocols: ["http"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "http"
+          , password: ""
         }
     ]
   , [
         "https://host.xz/path/to/repo.git/"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "https"
+          , password: ""
         }
     ]
   , [
         "https://token:x-oauth-basic@host.xz/path/to/repo.git/"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
-          , user: "token:x-oauth-basic"
-          , pathname: "/path/to/repo.git"
+          , user: "token"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , token: "token"
           , protocol: "https"
+          , password: "x-oauth-basic"
         }
     ]
   , [
         "https://x-token-auth:token@host.xz/path/to/repo.git/"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "host.xz"
-          , user: "x-token-auth:token"
-          , pathname: "/path/to/repo.git"
+          , user: "x-token-auth"
+          , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , token: "token"
           , protocol: "https"
+          , password: "token"
         }
     ]
   , [
         "https://user@bitbucket.org/user/repo"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "bitbucket.org"
           , user: "user"
           , pathname: "/user/repo"
           , hash: ""
           , search: ""
           , protocol: "https"
+          , password: ""
         }
     ]
   , [
         "https://user@organization.git.cloudforge.com/name.git"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "organization.git.cloudforge.com"
           , user: "user"
           , pathname: "/name.git"
           , hash: ""
           , search: ""
           , protocol: "https"
+          , password: ""
         }
     ]
   , [
         "https://token:x-oauth-basic@github.com/owner/name.git"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "github.com"
-          , user: "token:x-oauth-basic"
+          , user: "token"
           , pathname: "/owner/name.git"
           , hash: ""
           , search: ""
           , protocol: "https"
+          , password: "x-oauth-basic"
           , token: "token"
         }
     ]
@@ -342,13 +384,14 @@ const INPUT = [
         "https://x-token-auth:token@bitbucket.org/owner/name.git"
       , {
             protocols: ["https"]
-          , port: null
+          , port: ""
           , resource: "bitbucket.org"
-          , user: "x-token-auth:token"
+          , user: "x-token-auth"
           , pathname: "/owner/name.git"
           , hash: ""
           , search: ""
           , protocol: "https"
+          , password: "token"
           , token: "token"
         }
     ]
@@ -357,80 +400,89 @@ const INPUT = [
   , [
         "/path/to/repo.git/"
       , {
-            protocols: []
-          , port: null
+            protocols: ["file"]
+          , port: ""
           , resource: ""
           , user: ""
-          , pathname: "/path/to/repo.git"
+          , pathname: ""
           , hash: ""
           , search: ""
           , protocol: "file"
+          , password: ""
         }
     ]
   , [
         "path/to/repo.git/"
       , {
-            protocols: []
-          , port: null
+            protocols: ["file"]
+          , port: ""
           , resource: ""
           , user: ""
-          , pathname: "path/to/repo.git"
+          , pathname: ""
           , hash: ""
           , search: ""
           , protocol: "file"
+          , password: ""
         }
     ]
   , [
         "~/path/to/repo.git"
       , {
-            protocols: []
-          , port: null
+            protocols: ["file"]
+          , port: ""
           , resource: ""
           , user: ""
-          , pathname: "~/path/to/repo.git"
+          , pathname: ""
           , hash: ""
           , search: ""
           , protocol: "file"
+          , password: ""
         }
     ]
   , [
         "file:///path/to/repo.git/"
       , {
             protocols: ["file"]
-          , port: null
+          , port: ""
           , resource: ""
           , user: ""
-          , pathname: "file:///path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
+          , href: "file:///path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
+          , password: ""
         }
     ]
   , [
         "file://~/path/to/repo.git/"
       , {
             protocols: ["file"]
-          , port: null
-          , resource: ""
+          , port: ""
+          , resource: "~"
           , user: ""
-          , pathname: "file://~/path/to/repo.git"
+          , pathname: "/path/to/repo.git/"
+          , href: "file://~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "file"
+          , password: ""
         }
     ]
   , [
         "git@host.xz:path/name.git"
       , {
-            protocols: []
+            protocols: ["ssh"]
           , protocol: "ssh"
-          , port: null
+          , password: ""
+          , port: ""
           , resource: "host.xz"
           , user: "git"
           , pathname: "/path/name.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
+          , password: ""
         }
     ]
 ];
@@ -438,7 +490,8 @@ const INPUT = [
 tester.describe("git-up", test => {
     INPUT.forEach(function (c) {
         test.should("support " + c[0], () => {
-            c[1].href = c[0].replace(/\/$/, "");
+            c[1].href = c[1].href || c[0].replace(/\/$/, "");
+            c[1].password = c[1].password || ""
             c[1].protocol = c[1].protocol || c[1].protocols[0];
             c[1].token = c[1].token || "";
             const res = gitUp(c[0])
