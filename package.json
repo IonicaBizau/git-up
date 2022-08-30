@@ -28,7 +28,7 @@
   "homepage": "https://github.com/IonicaBizau/git-up",
   "dependencies": {
     "is-ssh": "^1.4.0",
-    "parse-url": "^8.0.0"
+    "parse-url": "^8.1.0"
   },
   "devDependencies": {
     "tester": "^1.4.3"
