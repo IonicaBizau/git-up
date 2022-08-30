@@ -10,13 +10,15 @@ const INPUT = [
       , {
             protocols: ["ssh"]
           , port: "42"
-          , resource: "host.xz:42"
+          , resource: "host.xz"
+          , host: "host.xz:42"
           , user: "user"
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -27,12 +29,14 @@ const INPUT = [
           , password: ""
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "git"
           , pathname: "/path/name.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -41,6 +45,7 @@ const INPUT = [
             protocols: ["https"]
           , port: ""
           , resource: "github.com"
+          , host: "github.com"
           , user: ""
           , pathname: "/IonicaBizau/node-parse-url.git"
           , hash: ""
@@ -48,6 +53,7 @@ const INPUT = [
           , protocol: "https"
           , password: ""
           , href: "https://github.com/IonicaBizau/node-parse-url.git"
+          , parse_failed: false
         }
     ]
   , [
@@ -56,12 +62,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "user"
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
     // TODO
@@ -70,13 +78,15 @@ const INPUT = [
       , {
             protocols: ["ssh"]
           , port: "4000"
-          , resource: "host.xz:4000"
+          , resource: "host.xz"
+          , host: "host.xz:4000"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -85,12 +95,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -99,12 +111,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "domain.xxx.com"
+          , host: "domain.xxx.com"
           , user: "git"
           , pathname: "/42foo/bar.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -113,12 +127,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "user"
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -127,12 +143,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -141,12 +159,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "user"
           , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -155,12 +175,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -169,12 +191,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "user"
           , pathname: "/~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -183,12 +207,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/~/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -197,12 +223,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "git"
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -211,12 +239,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "git"
           , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -225,12 +255,14 @@ const INPUT = [
             protocols: ["ssh"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "git"
           , pathname: "/path/to/repo.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -239,12 +271,14 @@ const INPUT = [
             protocols: ["rsync"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
 
@@ -255,12 +289,14 @@ const INPUT = [
             protocols: ["git"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "git"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -269,12 +305,14 @@ const INPUT = [
             protocols: ["git"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/~user/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "git"
           , password: ""
+          , parse_failed: false
         }
     ]
 
@@ -285,12 +323,14 @@ const INPUT = [
             protocols: ["http"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "http"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -299,12 +339,14 @@ const INPUT = [
             protocols: ["https"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: ""
           , pathname: "/path/to/repo.git/"
           , hash: ""
           , search: ""
           , protocol: "https"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -313,6 +355,7 @@ const INPUT = [
             protocols: ["https"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "token"
           , pathname: "/path/to/repo.git/"
           , hash: ""
@@ -320,6 +363,7 @@ const INPUT = [
           , token: "token"
           , protocol: "https"
           , password: "x-oauth-basic"
+          , parse_failed: false
         }
     ]
   , [
@@ -328,6 +372,7 @@ const INPUT = [
             protocols: ["https"]
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "x-token-auth"
           , pathname: "/path/to/repo.git/"
           , hash: ""
@@ -335,6 +380,7 @@ const INPUT = [
           , token: "token"
           , protocol: "https"
           , password: "token"
+          , parse_failed: false
         }
     ]
   , [
@@ -345,10 +391,12 @@ const INPUT = [
           , resource: "bitbucket.org"
           , user: "user"
           , pathname: "/user/repo"
+          , host: "bitbucket.org"
           , hash: ""
           , search: ""
           , protocol: "https"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -359,10 +407,12 @@ const INPUT = [
           , resource: "organization.git.cloudforge.com"
           , user: "user"
           , pathname: "/name.git"
+          , host: "organization.git.cloudforge.com"
           , hash: ""
           , search: ""
           , protocol: "https"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -373,11 +423,13 @@ const INPUT = [
           , resource: "github.com"
           , user: "token"
           , pathname: "/owner/name.git"
+          , host: "github.com"
           , hash: ""
           , search: ""
           , protocol: "https"
           , password: "x-oauth-basic"
           , token: "token"
+          , parse_failed: false
         }
     ]
   , [
@@ -386,6 +438,7 @@ const INPUT = [
             protocols: ["https"]
           , port: ""
           , resource: "bitbucket.org"
+          , host: "bitbucket.org"
           , user: "x-token-auth"
           , pathname: "/owner/name.git"
           , hash: ""
@@ -393,6 +446,7 @@ const INPUT = [
           , protocol: "https"
           , password: "token"
           , token: "token"
+          , parse_failed: false
         }
     ]
 
@@ -400,43 +454,19 @@ const INPUT = [
   , [
         "/path/to/repo.git/"
       , {
-            protocols: ["file"]
-          , port: ""
-          , resource: ""
-          , user: ""
-          , pathname: ""
-          , hash: ""
-          , search: ""
-          , protocol: "file"
-          , password: ""
+            parse_failed: true
         }
     ]
   , [
         "path/to/repo.git/"
       , {
-            protocols: ["file"]
-          , port: ""
-          , resource: ""
-          , user: ""
-          , pathname: ""
-          , hash: ""
-          , search: ""
-          , protocol: "file"
-          , password: ""
+            parse_failed: true
         }
     ]
   , [
         "~/path/to/repo.git"
       , {
-            protocols: ["file"]
-          , port: ""
-          , resource: ""
-          , user: ""
-          , pathname: ""
-          , hash: ""
-          , search: ""
-          , protocol: "file"
-          , password: ""
+            parse_failed: true
         }
     ]
   , [
@@ -448,10 +478,12 @@ const INPUT = [
           , user: ""
           , pathname: "/path/to/repo.git/"
           , href: "file:///path/to/repo.git"
+          , host: ""
           , hash: ""
           , search: ""
           , protocol: "file"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -463,10 +495,12 @@ const INPUT = [
           , user: ""
           , pathname: "/path/to/repo.git/"
           , href: "file://~/path/to/repo.git"
+          , host: "~"
           , hash: ""
           , search: ""
           , protocol: "file"
           , password: ""
+          , parse_failed: false
         }
     ]
   , [
@@ -477,26 +511,36 @@ const INPUT = [
           , password: ""
           , port: ""
           , resource: "host.xz"
+          , host: "host.xz"
           , user: "git"
           , pathname: "/path/name.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
           , password: ""
+          , parse_failed: false
         }
     ]
 ];
 
 tester.describe("git-up", test => {
     INPUT.forEach(function (c) {
-        test.should("support " + c[0], () => {
-            c[1].href = c[1].href || c[0].replace(/\/$/, "");
-            c[1].password = c[1].password || ""
-            c[1].protocol = c[1].protocol || c[1].protocols[0];
-            c[1].token = c[1].token || "";
-            const res = gitUp(c[0])
-            c[1].query = res.query
-            test.expect(res).toEqual(c[1]);
-        });
+        if (c[1].parse_failed) {
+            test.should(`throw if url is invalid: ${c[0]}`, () => {
+                test.expect(() => {
+                    gitUp(c[0])
+                }).toThrow(/url parsing failed/i)
+            })
+        } else {
+            test.should("support " + c[0], () => {
+                c[1].href = c[1].href || c[0].replace(/\/$/, "");
+                c[1].password = c[1].password || ""
+                c[1].protocol = c[1].protocol || c[1].protocols[0];
+                c[1].token = c[1].token || "";
+                const res = gitUp(c[0])
+                c[1].query = res.query
+                test.expect(res).toEqual(c[1]);
+            });
+        }
     });
 });
