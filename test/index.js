@@ -34,8 +34,6 @@ const INPUT = [
           , pathname: "/path/name.git"
           , hash: ""
           , search: ""
-          , protocol: "ssh"
-          , password: ""
           , parse_failed: false
         }
     ]
@@ -507,13 +505,27 @@ const INPUT = [
         "git@host.xz:path/name.git"
       , {
             protocols: ["ssh"]
-          , protocol: "ssh"
-          , password: ""
           , port: ""
           , resource: "host.xz"
           , host: "host.xz"
           , user: "git"
           , pathname: "/path/name.git"
+          , hash: ""
+          , search: ""
+          , protocol: "ssh"
+          , password: ""
+          , parse_failed: false
+        }
+    ]
+  , [
+        "git@host.xz:path%20to/repo%20name.git"
+      , {
+            protocols: ["ssh"]
+          , port: ""
+          , resource: "host.xz"
+          , host: "host.xz"
+          , user: "git"
+          , pathname: "/path%20to/repo%20name.git"
           , hash: ""
           , search: ""
           , protocol: "ssh"
