@@ -19,7 +19,7 @@
 
 # git-up
 
- [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/git-up.svg)](https://www.npmjs.com/package/git-up) [![Downloads](https://img.shields.io/npm/dt/git-up.svg)](https://www.npmjs.com/package/git-up) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/git-up.svg)](https://www.npmjs.com/package/git-up) [![Downloads](https://img.shields.io/npm/dt/git-up.svg)](https://www.npmjs.com/package/git-up) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/@johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 <a href="https://www.buymeacoffee.com/H96WwChMy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
@@ -216,6 +216,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@amirdiafi/react-native-ios-haptics`
  - `@amiruldev/wajs`
  - `@apardellass/react-native-audio-stream`
+ - `@aruntestpayment/react-native-payu-payment`
  - `@aviinash_jha/react-native-test_multiply`
  - `@aysea/react-native-ui-library`
  - `@azalpacir/react-native-dhp-printer`
@@ -225,10 +226,12 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@corelmax/react-native-my2c2p-sdk`
  - `@cs6/react-native-test-native-view-library`
  - `@damruravihara/react-native-testing-package`
+ - `@drakedeatonuk/rschedule`
  - `@enkeledi/react-native-week-month-date-picker`
  - `@extrieve_technologies/quickcapture_react_native`
  - `@felipesimmi/react-native-datalogic-module`
  - `@geeky-apo/react-native-advanced-clipboard`
+ - `@happy-gastro/react-native-printer-module`
  - `@hawkingnetwork/react-native-tab-view`
  - `@hbglobal/react-native-actions-shortcuts`
  - `@hemith/react-native-tnk`
@@ -240,9 +243,10 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@kgit/readbility`
  - `@labiebhn_/react-native-multiplier`
  - `@lehuyaa/my-assets`
+ - `@logisticinfotech/react-native-geocoding-reversegeocoding`
  - `@navabi/react-native-ssl-pinning`
- - `@npm_fluentco/adflow-react-native-sdk`
  - `@oiti/rn-liveness2d`
+ - `@orgbluetooth/react-native-arunpayupayment`
  - `@parallelnft/web3modal`
  - `@ponchodien/react-native-printer-imin`
  - `@positionex/position-sdk`
@@ -309,7 +313,6 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `gatsby-telemetry`
  - `gaurav-react-native-loop`
  - `gb-notifications`
- - `generator-bootstrap-boilerplate-template`
  - `genz-native-elements`
  - `gerimismalamsenin`
  - `gh-monoproject-cli`
@@ -320,6 +323,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `iiif-manifest-editor`
  - `jamuskalim`
  - `jesh-calculation`
+ - `jnf-accesscontrol-rnttl`
  - `jordy-frijters-test-lib`
  - `jrennsoh88-react-native-scroll-indicator`
  - `khaled-salem-custom-components`
@@ -414,6 +418,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-klarify-ios`
  - `react-native-klarify-ui`
  - `react-native-klc`
+ - `react-native-lazp-device-info`
  - `react-native-lib-test-rn-1`
  - `react-native-library-testing-422522`
  - `react-native-line-login-android`
@@ -439,15 +444,14 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-native-audio-engine`
  - `react-native-native-ios-test1`
  - `react-native-nativewind`
- - `react-native-nepali-picker`
  - `react-native-nghia-sharering`
  - `react-native-nice-learning`
  - `react-native-nyx-printer`
  - `react-native-offline-notice`
- - `react-native-omental-framework`
  - `react-native-onramp`
  - `react-native-otp-custom-library`
  - `react-native-paynow-generator`
+ - `react-native-payu-payment`
  - `react-native-payu-payment-testing`
  - `react-native-plugpag-wrapper`
  - `react-native-progress-arrow`
@@ -478,7 +482,6 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-sharing-intent`
  - `react-native-sherpa-onnx-offline-tts`
  - `react-native-simple-timeline`
- - `react-native-sixdee_test_lib`
  - `react-native-sp-test-common`
  - `react-native-sunmi-printer-hk`
  - `react-native-superapis-transbank-pos`
@@ -488,11 +491,13 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-teknoctrl-components`
  - `react-native-test-comlibrary`
  - `react-native-test-module-hhh`
+ - `react-native-test-multiplier-library`
  - `react-native-test-tooltip`
  - `react-native-test-view`
  - `react-native-ticker-tape`
  - `react-native-tilt-ble`
  - `react-native-tone-framework`
+ - `react-native-tone-test`
  - `react-native-tones`
  - `react-native-transtracker-library`
  - `react-native-uart-connection`

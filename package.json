@@ -1,6 +1,6 @@
 {
   "name": "git-up",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "A low level git url parser.",
   "main": "lib/index.js",
   "directories": {
@@ -44,6 +44,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
