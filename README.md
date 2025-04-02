@@ -80,7 +80,7 @@ var gitUp = require("git-up");
 console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
-//   , port: null
+//   , port: ""
 //   , resource: "github.com"
 //   , user: "git"
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -93,7 +93,7 @@ console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
-//   , port: null
+//   , port: ""
 //   , resource: "github.com"
 //   , user: ""
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -144,7 +144,7 @@ Parses the input url.
 #### Return
 - **Object** An object containing the following fields:
  - `protocols` (Array): An array with the url protocols (usually it has one element).
- - `port` (null|Number): The domain port.
+ - `port` (String): The domain port.
  - `resource` (String): The url domain (including subdomains).
  - `user` (String): The authentication user (usually for ssh urls).
  - `pathname` (String): The url pathname.
