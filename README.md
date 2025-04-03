@@ -80,7 +80,7 @@ var gitUp = require("git-up");
 console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
-//   , port: null
+//   , port: ""
 //   , resource: "github.com"
 //   , user: "git"
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -93,7 +93,7 @@ console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
-//   , port: null
+//   , port: ""
 //   , resource: "github.com"
 //   , user: ""
 //   , pathname: "/IonicaBizau/node-parse-url.git"
