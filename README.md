@@ -80,7 +80,7 @@ var gitUp = require("git-up");
 console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
-//   , port: ""
+//   , port: null
 //   , resource: "github.com"
 //   , user: "git"
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -93,7 +93,7 @@ console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
-//   , port: ""
+//   , port: null
 //   , resource: "github.com"
 //   , user: ""
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -107,23 +107,6 @@ console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 
 
 
-
-
-
-
-
-
-
-
-## :question: Get Help
-
-There are few ways to get help:
-
-
-
- 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
- 2. For bug reports and feature requests, open issues. :bug:
- 3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
 
 
 
@@ -153,6 +136,24 @@ Parses the input url.
  - `href` (String): The input url.
  - `protocol` (String): The git url protocol.
  - `token` (String): The oauth token (could appear in the https urls).
+
+
+
+
+
+
+
+
+
+## :question: Get Help
+
+There are few ways to get help:
+
+
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+ 2. For bug reports and feature requests, open issues. :bug:
+ 3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
 
 
 
@@ -212,6 +213,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@abhinavoneuipoc/stencil-test`
  - `@adatechnology/react-native-android-getnet-pos`
  - `@adembacaj/react-native-google-pay`
+ - `@ahmed_shaban123/react-native-currencyinput`
  - `@ali5049/react-native-buttons`
  - `@amirdiafi/react-native-ios-haptics`
  - `@amiruldev/wajs`
@@ -247,6 +249,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@navabi/react-native-ssl-pinning`
  - `@oiti/rn-liveness2d`
  - `@orgbluetooth/react-native-arunpayupayment`
+ - `@orgbluetooth/react-native-payupayment`
  - `@parallelnft/web3modal`
  - `@ponchodien/react-native-printer-imin`
  - `@positionex/position-sdk`
@@ -259,6 +262,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@sidghimire/react-native-mapbox-navigation`
  - `@sridharetikala/react-native-rn-lib-custom-components`
  - `@status-im/react-native-transparent-video`
+ - `@syedt/hellosdk`
  - `@taingo97/react-native-awesome-module`
  - `@taingo97/react-native-bluetooth-xprinter`
  - `@taingo97/react-native-expo-key-rsa-kt`
@@ -296,6 +300,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `demo-test-scrn`
  - `design-system-trial-milyasbpa`
  - `dogandev-simple-toast`
+ - `domaincomponent`
  - `erxes-telemetry`
  - `expo-renavigate`
  - `fawaterak-online-payment`
@@ -409,6 +414,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-geo-locator`
  - `react-native-get-countries`
  - `react-native-ghn-ekyc`
+ - `react-native-ideo-rn-notifications`
  - `react-native-innity-2`
  - `react-native-innity-remaster`
  - `react-native-input-library`
@@ -449,6 +455,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-nyx-printer`
  - `react-native-offline-notice`
  - `react-native-onramp`
+ - `react-native-opus`
  - `react-native-otp-custom-library`
  - `react-native-paynow-generator`
  - `react-native-payu-payment`
@@ -496,8 +503,6 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-test-view`
  - `react-native-ticker-tape`
  - `react-native-tilt-ble`
- - `react-native-tone-framework`
- - `react-native-tone-test`
  - `react-native-tones`
  - `react-native-transtracker-library`
  - `react-native-uart-connection`
@@ -526,6 +531,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `semantic-release-gitmoji-action`
  - `ship-release`
  - `smart_one_connect`
+ - `sungrow_tcu`
  - `tehmusimhujan`
  - `test-haptik-lib`
  - `test-library-123`
