@@ -80,7 +80,7 @@ var gitUp = require("git-up");
 console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: []
-//   , port: ""
+//   , port: null
 //   , resource: "github.com"
 //   , user: "git"
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -93,7 +93,7 @@ console.log(gitUp("git@github.com:IonicaBizau/node-parse-url.git"));
 console.log(gitUp("https://github.com/IonicaBizau/node-parse-url.git"));
 // => {
 //     protocols: [ "https" ]
-//   , port: ""
+//   , port: null
 //   , resource: "github.com"
 //   , user: ""
 //   , pathname: "/IonicaBizau/node-parse-url.git"
@@ -228,7 +228,6 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@corelmax/react-native-my2c2p-sdk`
  - `@cs6/react-native-test-native-view-library`
  - `@damruravihara/react-native-testing-package`
- - `@drakedeatonuk/rschedule`
  - `@enkeledi/react-native-week-month-date-picker`
  - `@extrieve_technologies/quickcapture_react_native`
  - `@felipesimmi/react-native-datalogic-module`
@@ -278,6 +277,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `@thinxviewx/core-rn`
  - `@tlgeo/react-native-gdal`
  - `@tomw2w/my-nuxt-layer`
+ - `@types/git-up`
  - `@wecraftapps/react-native-use-keyboard`
  - `@yplabs-ltd/react-native-detector`
  - `@zotasys/native`
@@ -349,6 +349,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `npm_one_2_2`
  - `npm_qwerty`
  - `nuxtpaginations`
+ - `octopulse`
  - `ori-bot-react-native`
  - `patepangdeui`
  - `payutesting`
@@ -410,7 +411,6 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-dummy-view`
  - `react-native-escape`
  - `react-native-fedlight-dsm`
- - `react-native-flyy`
  - `react-native-geo-locator`
  - `react-native-get-countries`
  - `react-native-ghn-ekyc`
@@ -508,6 +508,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - `react-native-uart-connection`
  - `react-native-ui-components-library`
  - `react-native-uvc-camera-android`
+ - `react-native-vanguard-sdk`
  - `react-native-version-app`
  - `react-native-volume-phisical`
  - `react-native-withframework-check`
